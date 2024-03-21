@@ -1,0 +1,58 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+.btn {
+    @apply py-3 font-bold capitalize duration-200 ease-in rounded-md bg-color-secondary px-9 hover:opacity-80;
+}
+.card_btn {
+    @apply w-full py-3 font-bold capitalize duration-200 ease-in rounded-md px-9 bg-color-primary-dark hover:bg-color-secondary;
+}
+.title {
+    @apply text-3xl font-bold leading-snug md:text-4xl;
+}
+.blob1 {
+    @apply absolute top-0 overflow-hidden rounded-full w-80 h-80 bg-color-blob -left-5 -z-10 blur-2xl opacity-30;
+}
+.blob2 {
+    @apply absolute right-0 overflow-hidden rounded-full w-80 h-80 bg-color-secondary bottom-10 -z-10 blur-2xl opacity-30;
+}
+.user-text {
+    display: none;
+}
+.user-text.active-text {
+    display: block;
+    animation: moveup 1s linear forwards;
+}
+.user-pic {
+    transition: all 0.2s ease;
+}
+.user-pic.active-pic {
+    border: 2px solid #ff7d3b;
+}
+@keyframes moveup {
+    0% {
+        margin-top: 40px;
+        opacity: 0;
+    }
+    50% {
+        margin-top: 20px;
+        opacity: 0.1;
+    }
+    100% {
+        margin-top: 0px;
+        opacity: 1;
+    }
+}
+.card {
+    perspective: 1000px;
+}
+.front,
+.back {
+    backface-visibility: hidden;
+    transition: all 0.4s ease;
+}
+.front {
+    overflow: hidden;
+}
