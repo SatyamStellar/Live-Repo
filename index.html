@@ -1,0 +1,664 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="/src/output.css">
+    <script src="https://kit.fontawesome.com/d2816e204d.js" crossorigin="anonymous"></script>
+    <script defer src="/index.js"></script>
+</head>
+
+<body class="tracking-wide text-white bg-color-primary">
+    <header>
+        <nav class="container flex items-center justify-between mx-auto">
+            <div class="p-5 text-3xl font-bold left-nav text-color-secondary">
+                <a href="#home">
+                    <span class="text-white">Sat</span>yam.
+                </a>
+            </div>
+            <div class=" right-nav">
+                <ul class="items-center hidden space-x-6 lg:flex">
+                    <li><a id="hLink" class="duration-200 ease-in hover:text-color-secondary" href="#">Home</a></li>
+                    <li><a id="hLink" class="duration-200 ease-in hover:text-color-secondary"
+                            href="#Features">Features</a></li>
+                    <li><a id="hLink" class="duration-200 ease-in hover:text-color-secondary" href="#">Testimonial</a>
+                    </li>
+                    <li><a id="hLink" class="duration-200 ease-in hover:text-color-secondary"
+                            href="#Pricing">Pricing</a></li>
+                    <li><a id="hLink" class="duration-200 ease-in hover:text-color-secondary" href="#">Blog</a></li>
+                    <li><a id="hLink" class="duration-200 ease-in hover:text-color-secondary" href="#">Contact</a></li>
+                    <li><button
+                            class="py-3 font-bold capitalize duration-200 ease-in rounded-md bg-color-secondary px-9 hover:opacity-80">Free
+                            trail </button></li>
+                </ul>
+            </div>
+            <!-- Mobile Screen NavBar -->
+            <div id="hambuger" class="z-50 cursor-pointer lg:hidden">
+                <i class="fa-solid fa-bars"></i>
+            </div>
+            <div id="menu" class="bg-color-primary-dark h-[100vh] absolute hidden inset-0">
+                <ul class="grid h-full p-20 place-items-center">
+                    <li><a class="duration-200 ease-in hover:text-color-secondary" href="">Home</a></li>
+                    <li><a class="duration-200 ease-in hover:text-color-secondary" href="#Features">Features</a></li>
+                    <li><a class="duration-200 ease-in hover:text-color-secondary" href="#Testimonial">Testimonial</a>
+                    </li>
+                    <li><a class="duration-200 ease-in hover:text-color-secondary" href="#Pricing">Pricing</a></li>
+                    <li><a class="duration-200 ease-in hover:text-color-secondary" href="#Blog">Blog</a></li>
+                    <li><a class="duration-200 ease-in hover:text-color-secondary" href="#Contact">Contact</a></li>
+                    <li><button
+                            class="py-3 font-bold capitalize duration-200 ease-in rounded-md bg-color-secondary px-9 hover:opacity-80">Free
+                            trail </button></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+    <main>
+        <section id="Home" class="relative ">
+            <div
+                class="absolute top-0 overflow-hidden rounded-full w-80 h-80 bg-color-blob -left-5 blur-2xl opacity-30 -z-10">
+            </div>
+            <div
+                class="absolute right-0 overflow-hidden rounded-full bottom-10 w-80 h-80 bg-color-secondary blur-2xl opacity-30 -z-10">
+            </div>
+            <div class="container p-20">
+                <div class="z-20 flex flex-col items-center md:flex-row">
+                    <div class="pr-10 mb-12 text-center md:text-left md:w-1/2">
+                        <h1 class="mb-4 text-3xl font-bold leading-snug md:text-4xl">
+                            Awesome App for Your Financial.
+                        </h1>
+                        <p class="mb-10 leading-relaxed">This should be used to tell a story and let your user <br> know
+                            little more about app and it's use. How <br> can benefit them.</p>
+                        <button
+                            class="py-3 font-bold capitalize duration-200 ease-in rounded-md bg-color-secondary px-9 hover:opacity-80">Downlad
+                            App</button>
+                    </div>
+                    <div class="md:w-1/2">
+                        <img src="/img/hero4.png" alt="">
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section id="Features" class="bg-color-primary-light">
+            <div class="container py-20">
+                <div class="m-auto mb-20 text-center md:w-1/2">
+                    <h4 class="mb-4 font-bold text-color-secondary">Our Features</h4>
+                    <h1 class="title">Easy To Manage Your All Payment By Our App</h1>
+                </div>
+                <!-- Cards -->
+                <div class="grid gap-12 px-4 lg:grid-cols-3 md:grid-cols-2 sm:grid-cols-1 lg:px-8 lg:gap-8 ">
+                    <!-- Card 1 -->
+                    <div
+                        class="px-5 py-20 text-center duration-200 ease-in border-2 border-solid cursor-pointer rounded-2xl border-color-gray hover:bg-color-primary-dark">
+                        <div class="inline-block px-6 py-5 bg-color-secondary rounded-2xl">
+                            <i class="text-4xl fa-solid fa-calendar-days"></i>
+                        </div>
+                        <h3 class="py-4 text-xl font-bold ">Expance Tracking</h3>
+                        <p class="leading-relaxed">We use an application design a testing gnoes to keep away</p>
+                    </div>
+                    <!-- Card 2 -->
+                    <div
+                        class="px-5 py-20 text-center duration-200 ease-in border-2 border-solid cursor-pointer rounded-2xl border-color-gray hover:bg-color-primary-dark">
+                        <div class="inline-block px-6 py-5 bg-color-secondary rounded-2xl">
+                            <i class="text-4xl fa-solid fa-chart-column"></i>
+                        </div>
+                        <h3 class="py-4 text-xl font-bold ">Financial Snapshot</h3>
+                        <p class="leading-relaxed">We use an application design a testing gnoes to keep away</p>
+                    </div>
+                    <!-- Card 3 -->
+                    <div
+                        class="px-5 py-20 text-center duration-200 ease-in border-2 border-solid cursor-pointer rounded-2xl border-color-gray hover:bg-color-primary-dark">
+                        <div class="inline-block px-6 py-5 bg-color-secondary rounded-2xl">
+                            <i class="text-4xl fa-solid fa-phone"></i>
+                        </div>
+                        <h3 class="py-4 text-xl font-bold ">Support 24/24</h3>
+                        <p class="leading-relaxed">We use an application design a testing gnoes to keep away</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section id="saving-money">
+            <div class="container relative py-20">
+                <div class="blob1"></div>
+                <div class="blob2"></div>
+                <div class="flex flex-col items-center justify-between md:flex-row ">
+                    <div class="mb-12 md:w-1/2">
+                        <img src="/img/hero3.png" alt="">
+                    </div>
+                    <div class="text-center md:text-left md:w-1/2 md:ml-20">
+                        <h4 class="mb-4 font-bold text-color-secondary">Saving Money</h4>
+                        <h1 class="mb-4 title">Best Financing App To Save Your Money </h1>
+                        <p class="mb-10 leading-relaxed">Best financing app ever in the world. Easy to use and very user
+                            friendly for mobile banking. You can control your card easily and send money to someone just
+                            in one click</p>
+                        <button class="btn">Read More</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section id="how-its-works" class="bg-color-primary-light">
+            <div class="container py-20 ">
+                <div class="m-auto mb-20 text-center md:w-1/2">
+                    <h4 class="mb-4 font-bold text-color-secondary">How It Work</h4>
+                    <h1 class="title">Grow Up Your Moneys <br> Saving</h1>
+                </div>
+                <div class="flex flex-col items-center justify-center space-y-6 md:space-y-0 md:space-x-6 md:flex-row">
+                    <!-- Card 1 -->
+                    <div class="text-center cursor-pointer ">
+                        <div
+                            class="relative inline-block px-6 py-3 duration-200 ease-in rounded-lg cursor-pointer bg-color-primary-dark hover:bg-color-secondary">
+                            <p
+                                class="text-6xl lg:after:content-[''] lg:after:flex lg:after:bg-[url('/img/line.png')] lg:after:absolute lg:after:top-4 lg:after:left-32 lg:after:bg-no-repeat lg:after:h-7 lg:after:w-52 2xl:after:left-52">
+                                1</p>
+                        </div>
+                        <h3 class="py-4 text-xl font-bold ">Expance Tracking</h3>
+                        <p class="leading-relaxed">We use an application design a testing gnoes to keep away</p>
+                    </div>
+                    <!-- Card 2 -->
+                    <div class="text-center cursor-pointer ">
+                        <div
+                            class="relative inline-block px-6 py-3 duration-200 ease-in rounded-lg cursor-pointer bg-color-primary-dark hover:bg-color-secondary">
+                            <p
+                                class="text-6xl lg:after:content-[''] lg:after:flex lg:after:bg-[url('/img/line-bottom.png')] lg:after:absolute lg:after:top-8 lg:after:left-32 lg:after:bg-no-repeat lg:after:h-7 lg:after:w-52 2xl:after:left-52">
+                                2</p>
+                        </div>
+                        <h3 class="py-4 text-xl font-bold ">Set Up Your Profile</h3>
+                        <p class="leading-relaxed">We use an application design a testing gnoes to keep away</p>
+                    </div>
+                    <!-- Card 3 -->
+                    <div class="text-center cursor-pointer ">
+                        <div
+                            class="relative inline-block px-6 py-3 duration-200 ease-in rounded-lg cursor-pointer bg-color-primary-dark hover:bg-color-secondary">
+                            <p class="text-6xl">3</p>
+                        </div>
+                        <h3 class="py-4 text-xl font-bold ">Enjoy The Features</h3>
+                        <p class="leading-relaxed">We use an application design a testing gnoes to keep away</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section id="Testimonial">
+            <div class="container py-20">
+                <div class="m-auto mb-20 text-center md:w-1/2">
+                    <h4 class="mb-4 font-bold text-color-secondary">User Review</h4>
+                    <h1 class="title">What Our Clint Say Our App <br>After Use It</h1>
+                </div>
+                <div class="mb-8">
+                    <div class="flex flex-wrap items-center justify-center">
+                        <img src="./img/user1.jpg" alt=""
+                            class="w-20 h-20 p-1 m-3 rounded-full cursor-pointer user-pic active-pic"
+                            onclick="showReview()">
+                        <img src="./img/user2.jpg" alt="" class="w-20 h-20 p-1 m-3 rounded-full cursor-pointer user-pic"
+                            onclick="showReview()">
+                        <img src="./img/user3.jpg" alt="" class="w-20 h-20 p-1 m-3 rounded-full cursor-pointer user-pic"
+                            onclick="showReview()">
+                        <img src="./img/user4.jpg" alt="" class="w-20 h-20 p-1 m-3 rounded-full cursor-pointer user-pic"
+                            onclick="showReview()">
+                        <img src="./img/user5.jpg" alt="" class="w-20 h-20 p-1 m-3 rounded-full cursor-pointer user-pic"
+                            onclick="showReview()">
+                    </div>
+                    <div class="grid place-items-center text-center m-auto md:w-4/5 min-h-[40vh] z-20">
+                        <div class="user-text active-text">
+                            <p class="mb-6 md:text-2xl">"This should be used to tell a story and inclued any testimonial
+                                you migth have about your project or service for your clints"!</p>
+                            <h4 class="mb-6 font-bold bg-color-secondary">Markin Nesus</h4>
+                            <p>IOS Developer</p>
+                        </div>
+                        <div class="user-text">
+                            <p class="mb-6 md:text-2xl">"This should be used to tell a story and inclued any testimonial
+                                you migth have about your project or service for your clints"!</p>
+                            <h4 class="mb-6 font-bold bg-color-secondary">Verna Ducuan</h4>
+                            <p>Flutter Developer</p>
+                        </div>
+                        <div class="user-text">
+                            <p class="mb-6 md:text-2xl">"This should be used to tell a story and inclued any testimonial
+                                you migth have about your project or service for your clints"!</p>
+                            <h4 class="mb-6 font-bold bg-color-secondary">Pitle Karol</h4>
+                            <p>Android Developer</p>
+                        </div>
+                        <div class="user-text">
+                            <p class="mb-6 md:text-2xl">"This should be used to tell a story and inclued any testimonial
+                                you migth have about your project or service for your clints"!</p>
+                            <h4 class="mb-6 font-bold bg-color-secondary">Mark Joe</h4>
+                            <p>React Developer</p>
+                        </div>
+                        <div class="user-text">
+                            <p class="mb-6 md:text-2xl">"This should be used to tell a story and inclued any testimonial
+                                you migth have about your project or service for your clints"!</p>
+                            <h4 class="mb-6 font-bold bg-color-secondary">Leila Domniuc</h4>
+                            <p>Angular Developer</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section id="pricing" class="bg-color-primary-light">
+            <div class="container py-20">
+                <div class="m-auto text-center md:w-1/2">
+                    <h4 class="mb-4 font-bold text-color-secondary">Pricing</h4>
+                    <h1 class="title">Get In Reasonable Price</h1>
+
+                </div>
+                <!-- Rouned Switch -->
+                <div class="flex items-center justify-center gap-4 mt-5 mb-20">
+                    <p>Bill Monthly</p>
+                    <label for="toggleBtn" class="relative inline-block w-20 h-8 rounded-full cursor-pointer">
+                        <input type="checkbox" id="toggleBtn" class="w-0 h-0 opacity-0 peer">
+                        <span
+                            class="absolute top-0 left-0 right-0 bottom-0 bg-color-primary-light border border-solid border-color-gray rounded-full duration-300 before:content-[''] before:absolute before:w-6 before:h-6 before:bottom-1 before:left-1 before:rounded-full before:bg-color-white before:duration-300 peer-checked:before:translate-x-12 peer-checked:bg-color-secondary"></span>
+                    </label>
+                    <p>Bill Annually</p>
+                </div>
+
+                <div class="grid gap-5 md:grid-cols-2 lg:grid-cols-3">
+                    <!-- Card 1 -->
+                    <div class="relative w-auto h-auto card ">
+                        <!-- Front side -->
+                        <div id="card_1_front"
+                            class="w-full h-full border border-solid front px-7 py-11 rounded-2xl border-color-gray">
+                            <div class="relative">
+
+                                <p
+                                    class="text-6xl pl-6 font-bold before:content-['$'] before:absolute before:text-sm before:top-0 before:left-0">
+                                    20 <span class="text-sm font-normal -tracking-widest">/per month</span>
+                                </p>
+                            </div>
+                            <div class="py-10 ">
+                                <h3 class="pb-3 text-xl font-bold">
+                                    Basic
+                                </h3>
+                                <p class="leading-relaxed">For Beginner Who Wants To scale Business Globaly</p>
+                            </div>
+                            <ul class="pb-10 space-y-4">
+                                <li><i class="fa-solid fa-bookmark text-color-secondary"></i>
+                                    <span class="pl-4">Expanse Management</span>
+                                </li>
+                                <li><i class="fa-solid fa-bookmark text-color-secondary"></i>
+                                    <span class="pl-4">Card Management</span>
+                                </li>
+                                <li><i class="fa-solid fa-bookmark text-color-gray"></i>
+                                    <span class="pl-4">Instant Statistics</span>
+                                </li>
+                                <li><i class="fa-solid fa-bookmark text-color-gray"></i>
+                                    <span class="pl-4">Bookmark Function </span>
+                                </li>
+                                <li><i class="fa-solid fa-bookmark text-color-gray"></i>
+                                    <span class="pl-4">Accounting System</span>
+                                </li>
+                            </ul>
+                            <button class="card_btn">Get Started</button>
+                        </div>
+                        <!-- BackSide -->
+                        <div id="card_1_back"
+                            class="absolute top-0 left-0 w-full h-full border border-solid rotate-y-180 back px-7 py-11 rounded-2xl border-color-gray ">
+                            <div class="relative">
+
+                                <p
+                                    class="text-6xl pl-6 font-bold before:content-['$'] before:absolute before:text-sm before:top-0 before:left-0">
+                                    200 <span class="text-sm font-normal -tracking-widest">/per year</span>
+                                </p>
+                            </div>
+                            <div class="py-10 ">
+                                <h3 class="pb-3 text-xl font-bold">
+                                    Basic
+                                </h3>
+                                <p class="leading-relaxed">For Beginner Who Wants To scale Business Globaly</p>
+                            </div>
+                            <ul class="pb-10 space-y-4">
+                                <li><i class="fa-solid fa-bookmark text-color-secondary"></i>
+                                    <span class="pl-4">Expanse Management</span>
+                                </li>
+                                <li><i class="fa-solid fa-bookmark text-color-secondary"></i>
+                                    <span class="pl-4">Card Management</span>
+                                </li>
+                                <li><i class="fa-solid fa-bookmark text-color-gray"></i>
+                                    <span class="pl-4">Instant Statistics</span>
+                                </li>
+                                <li><i class="fa-solid fa-bookmark text-color-gray"></i>
+                                    <span class="pl-4">Bookmark Function </span>
+                                </li>
+                                <li><i class="fa-solid fa-bookmark text-color-gray"></i>
+                                    <span class="pl-4">Accounting System</span>
+                                </li>
+                            </ul>
+                            <button class="card_btn">Get Started</button>
+                        </div>
+                    </div>
+                    <!-- Card 2 -->
+                    <div class="relative w-auto h-auto card ">
+                        <!-- Front side -->
+                        <div id="card_2_front"
+                            class="w-full h-full border border-solid front px-7 py-11 rounded-2xl border-color-gray">
+                            <div class="relative">
+
+                                <p
+                                    class="text-6xl pl-6 font-bold before:content-['$'] before:absolute before:text-sm before:top-0 before:left-0">
+                                    50 <span class="text-sm font-normal -tracking-widest">/per month</span>
+                                </p>
+                            </div>
+                            <div class="py-10 ">
+                                <h3 class="pb-3 text-xl font-bold">
+                                    Standard
+                                </h3>
+                                <p class="leading-relaxed">For Beginner Who Wants To scale Business Globaly</p>
+                            </div>
+                            <ul class="pb-10 space-y-4">
+                                <li><i class="fa-solid fa-bookmark text-color-secondary"></i>
+                                    <span class="pl-4">Expanse Management</span>
+                                </li>
+                                <li><i class="fa-solid fa-bookmark text-color-secondary"></i>
+                                    <span class="pl-4">Card Management</span>
+                                </li>
+                                <li><i class="fa-solid fa-bookmark text-color-secondary"></i>
+                                    <span class="pl-4">Instant Statistics</span>
+                                </li>
+                                <li><i class="fa-solid fa-bookmark text-color-secondary"></i>
+                                    <span class="pl-4">Bookmark Function </span>
+                                </li>
+                                <li><i class="fa-solid fa-bookmark text-color-gray"></i>
+                                    <span class="pl-4">Accounting System</span>
+                                </li>
+                            </ul>
+                            <button class="card_btn">Get Started</button>
+                        </div>
+                        <!-- BackSide -->
+                        <div id="card_2_back"
+                            class="absolute top-0 left-0 w-full h-full border border-solid rotate-y-180 back px-7 py-11 rounded-2xl border-color-gray ">
+                            <div class="relative">
+
+                                <p
+                                    class="text-6xl pl-6 font-bold before:content-['$'] before:absolute before:text-sm before:top-0 before:left-0">
+                                    500 <span class="text-sm font-normal -tracking-widest">/per year</span>
+                                </p>
+                            </div>
+                            <div class="py-10 ">
+                                <h3 class="pb-3 text-xl font-bold">
+                                    Standard
+                                </h3>
+                                <p class="leading-relaxed">For Beginner Who Wants To scale Business Globaly</p>
+                            </div>
+                            <ul class="pb-10 space-y-4">
+                                <li><i class="fa-solid fa-bookmark text-color-secondary"></i>
+                                    <span class="pl-4">Expanse Management</span>
+                                </li>
+                                <li><i class="fa-solid fa-bookmark text-color-secondary"></i>
+                                    <span class="pl-4">Card Management</span>
+                                </li>
+                                <li><i class="fa-solid fa-bookmark text-color-secondary"></i>
+                                    <span class="pl-4">Instant Statistics</span>
+                                </li>
+                                <li><i class="fa-solid fa-bookmark text-color-secondary"></i>
+                                    <span class="pl-4">Bookmark Function </span>
+                                </li>
+                                <li><i class="fa-solid fa-bookmark text-color-gray"></i>
+                                    <span class="pl-4">Accounting System</span>
+                                </li>
+                            </ul>
+                            <button class="card_btn">Get Started</button>
+                        </div>
+                    </div>
+                    <!-- Card 3 -->
+                    <div class="relative w-auto h-auto card ">
+                        <!-- Front side -->
+                        <div id="card_3_front"
+                            class="w-full h-full border border-solid front px-7 py-11 rounded-2xl border-color-gray">
+                            <div class="relative">
+
+                                <p
+                                    class="text-6xl pl-6 font-bold before:content-['$'] before:absolute before:text-sm before:top-0 before:left-0">
+                                    120 <span class="text-sm font-normal -tracking-widest">/per month</span>
+                                </p>
+                            </div>
+                            <div class="py-10 ">
+                                <h3 class="pb-3 text-xl font-bold">
+                                    Premimum
+                                </h3>
+                                <p class="leading-relaxed">For Beginner Who Wants To scale Business Globaly</p>
+                            </div>
+                            <ul class="pb-10 space-y-4">
+                                <li><i class="fa-solid fa-bookmark text-color-secondary"></i>
+                                    <span class="pl-4">Expanse Management</span>
+                                </li>
+                                <li><i class="fa-solid fa-bookmark text-color-secondary"></i>
+                                    <span class="pl-4">Card Management</span>
+                                </li>
+                                <li><i class="fa-solid fa-bookmark text-color-secondary"></i>
+                                    <span class="pl-4">Instant Statistics</span>
+                                </li>
+                                <li><i class="fa-solid fa-bookmark text-color-secondary"></i>
+                                    <span class="pl-4">Bookmark Function </span>
+                                </li>
+                                <li><i class="fa-solid fa-bookmark text-color-secondary"></i>
+                                    <span class="pl-4">Accounting System</span>
+                                </li>
+                            </ul>
+                            <button class="card_btn">Get Started</button>
+                        </div>
+                        <!-- BackSide -->
+                        <div id="card_3_back"
+                            class="absolute top-0 left-0 w-full h-full border border-solid rotate-y-180 back px-7 py-11 rounded-2xl border-color-gray ">
+                            <div class="relative">
+
+                                <p
+                                    class="text-6xl pl-6 font-bold before:content-['$'] before:absolute before:text-sm before:top-0 before:left-0">
+                                    1000 <span class="text-sm font-normal -tracking-widest">/per year</span>
+                                </p>
+                            </div>
+                            <div class="py-10 ">
+                                <h3 class="pb-3 text-xl font-bold">
+                                    Premimum
+                                </h3>
+                                <p class="leading-relaxed">For Beginner Who Wants To scale Business Globaly</p>
+                            </div>
+                            <ul class="pb-10 space-y-4">
+                                <li><i class="fa-solid fa-bookmark text-color-secondary"></i>
+                                    <span class="pl-4">Expanse Management</span>
+                                </li>
+                                <li><i class="fa-solid fa-bookmark text-color-secondary"></i>
+                                    <span class="pl-4">Card Management</span>
+                                </li>
+                                <li><i class="fa-solid fa-bookmark text-color-secondary"></i>
+                                    <span class="pl-4">Instant Statistics</span>
+                                </li>
+                                <li><i class="fa-solid fa-bookmark text-color-secondary"></i>
+                                    <span class="pl-4">Bookmark Function </span>
+                                </li>
+                                <li><i class="fa-solid fa-bookmark text-color-secondary"></i>
+                                    <span class="pl-4">Accounting System</span>
+                                </li>
+                            </ul>
+                            <button class="card_btn">Get Started</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            </div>
+        </section>
+        <section class="blog">
+            <div class="container py-20">
+                <div class="m-auto mb-20 text-center md:w-1/2">
+                    <h4 class="mb-4 font-bold text-color-secondary">Innovation And Qualtiy Improvaement</h4>
+                    <h1 class="title">Latest Update, Solution <br>And Company News</h1>
+                </div>
+                <div class="grid gap-5 md:grid-cols-2 lg:grid-cols-3">
+                    <!-- Card  no  1 -->
+                    <div>
+                        <div class="lg:h-[40vh] rounded-xl scale-100 overflow-hidden">
+                            <img src="./img/blog1.jpg" alt=""
+                                class="transition duration-200 ease-in lg:h-full lg:w-full hover:scale-125">
+                        </div>
+                        <div>
+                            <div class="flex items-center gap-5 py-5 ">
+                                <p>20 Aug 2023</p>
+                                <p>1 min read</p>
+                            </div>
+                            <a href="#blog"
+                                class="text-2xl font-bold underline hover:text-color-secondary hover:no-underline">Four
+                                ways to cheer youself up on Blue Monday</a>
+                            <p class="my-5 leading-relaxed ">On the second edition of Serious Business, Inc. editor
+                                Salmon debate...</p>
+                            <a href="#blog"
+                                class="inline-block font-bold transition-all duration-300 ease-in-out hover:text-color-secondary">
+                                <span class="tracking-wider underline capitalize hover:no-underline ">Read More</span>
+                            </a>
+                        </div>
+                    </div>
+                    <!-- Card  no  2 -->
+                    <div>
+                        <div class="lg:h-[40vh] rounded-xl scale-100 overflow-hidden">
+                            <img src="./img/blog2.jpg" alt=""
+                                class="transition duration-200 ease-in lg:h-full lg:w-full hover:scale-125">
+                        </div>
+                        <div>
+                            <div class="flex items-center gap-5 py-5 ">
+                                <p>20 Aug 2023</p>
+                                <p>1 min read</p>
+                            </div>
+                            <a href="#blog"
+                                class="text-2xl font-bold underline hover:text-color-secondary hover:no-underline">How
+                                to Organize Your budget for Maximum Productivity?</a>
+                            <p class="my-5 leading-relaxed ">Global provider connected products for consumers, and
+                                enterprises worldwide, supply chain control is everything...</p>
+                            <a href="#blog"
+                                class="inline-block font-bold transition-all duration-300 ease-in-out hover:text-color-secondary">
+                                <span class="tracking-wider underline capitalize hover:no-underline ">Read More</span>
+                            </a>
+                        </div>
+                    </div>
+                    <!-- Card  no  3 -->
+                    <div>
+                        <div class="lg:h-[40vh] rounded-xl scale-100 overflow-hidden">
+                            <img src="./img/blog3.jpg" alt=""
+                                class="transition duration-200 ease-in lg:h-full lg:w-full hover:scale-125">
+                        </div>
+                        <div>
+                            <div class="flex items-center gap-5 py-5 ">
+                                <p>20 Aug 2023</p>
+                                <p>1 min read</p>
+                            </div>
+                            <a href="#blog"
+                                class="text-2xl font-bold underline hover:text-color-secondary hover:no-underline">Should
+                                Small Businesses Be Entitled to system?</a>
+                            <p class="my-5 leading-relaxed ">Our team provides skilled & experienced managers who know
+                                the intricacies of this vertical and focus...</p>
+                            <a href="#blog"
+                                class="inline-block font-bold transition-all duration-300 ease-in-out hover:text-color-secondary">
+                                <span class="tracking-wider underline capitalize hover:no-underline ">Read More</span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section id="donlwoad" class="pt-40 bg-color-primary-light">
+            <div class="flex h-[80vh] items-center justify-center container">
+                <div class="m-auto text-center md:h-2/3 ">
+                    <h1 class="title">Download App Now And Save Your Mone</h1>
+                    <p class="pt-5 leading-relaxed">Serving an impressive list of long-term money with experience and
+                        expertise in multiple industries.</p>
+                    <div class="flex flex-col items-center justify-center gap-5 pt-10 md:flex-row">
+                        <a href="#"
+                            class="grid h-16 rounded-lg bg-color-white w-44 place-items-center hover:opacity-70">
+                            <img src="./img/ios-store-dark.png" alt="">
+                        </a>
+                        <a href="#"
+                            class="grid h-16 rounded-lg bg-color-white w-44 place-items-center hover:opacity-70">
+                            <img src="./img/g-play-dark.png" alt="">
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section id="contact">
+            <div class="p-40 contaier">
+                <div class="m-auto mb-20 text-center md:w-1/2">
+                    <h4 class="mb-4 font-bold text-color-secondary">Have A Question</h4>
+                    <h1 class="title">Get In Touch</h1>
+                </div>
+
+                <form>
+                    <div class="w-full m-auto text-center md:w-2/3">
+                        <div class="grid gap-6 mb-6 text-color-primary-dark md:grid-cols-2">
+                            <input type="text"
+                                class="block w-full p-3 text-sm border border-gray-300 rounded-lg bg-gray-50 focus:outline-none focus:border-color-secondary"
+                                placeholder="Name">
+                            <input type="email"
+                                class="block w-full p-3 text-sm border border-gray-300 rounded-lg bg-gray-50 focus:outline-none focus:border-color-secondary"
+                                placeholder="Email">
+                            <input type="tel"
+                                class="block w-full p-3 text-sm border border-gray-300 rounded-lg bg-gray-50 focus:outline-none focus:border-color-secondary"
+                                placeholder="Phone">
+                            <input type="text"
+                                class="block w-full p-3 text-sm border border-gray-300 rounded-lg bg-gray-50 focus:outline-none focus:border-color-secondary"
+                                placeholder="Company">
+                        </div>
+                        <textarea rows="4"
+                            class="block w-full p-3 text-sm border border-gray-300 rounded-lg text-color-primary-dark bg-gray-50 focus:outline-none focus:border-color-secondary"
+                            placeholder="Message"></textarea>
+                        <button class="mt-10 btn">Send Message</button>
+                    </div>
+                </form>
+            </div>
+        </section>
+        <section id="footer">
+            <div class="relative bg-color-primary-dark">
+                <div class="container py-10">
+                    <div class="grid gap-10 pb-10 md:grid-cols-3">
+                        <div class="space-y-6">
+                            <h4 class="text-lg font-bold">About App</h4>
+                            <p class="leading-relaxed">This Should Be Used To Tell A Story And Include Any Testimonials You Might Have About Your Product Or Service For Your Clients</p>
+                            <div class="flex items-center gap-5">
+                                <p>Follow Us</p>
+                                    <i class="cursor-pointer fa-brands fa-facebook-f hover:text-color-secondary"></i>
+                                    <i class="cursor-pointer fa-brands fa-twitter hover:text-color-secondary"></i>
+                                    <i class="cursor-pointer fa-brands fa-youtube hover:text-color-secondary"></i>
+                                    <i class="cursor-pointer fa-brands fa-instagram hover:text-color-secondary"></i>
+                            </div>
+                        </div>
+                        <div class="flex justify-between md:justify-around">
+                            <div class="space-y-6">
+                                <h4 class="text-lg font-bold">Quick Links</h4>
+                                <ul class="space-y-3">
+                                    <li class="underline hover:no-underline hover:text-color-secondary"><a href="#">Home</a></li>
+                                    <li class="underline hover:no-underline hover:text-color-secondary"><a href="#features">Features</a></li>
+                                    <li class="underline hover:no-underline hover:text-color-secondary"><a href="#testimonial">Testimonial</a></li>
+                                    <li class="underline hover:no-underline hover:text-color-secondary"><a href="#pricing">Pricing</a></li>
+                                    <li class="underline hover:no-underline hover:text-color-secondary"><a href="#blog">Blog</a></li>
+                                    <li class="underline hover:no-underline hover:text-color-secondary"><a href="#contact">Contact</a></li>
+                                </ul>
+                            </div>
+                            <div class="space-y-6">
+                                <h4 class="text-lg font-bold">Help</h4>
+                                <ul class="space-y-3">
+                                    <li class="underline hover:no-underline hover:text-color-secondary"><a href="#">About Us</a></li>
+                                    <li class="underline hover:no-underline hover:text-color-secondary"><a href="#features">Partners</a></li>
+                                    <li class="underline hover:no-underline hover:text-color-secondary"><a href="#testimonial">Career</a></li>
+                                    <li class="underline hover:no-underline hover:text-color-secondary"><a href="#pricing">Reviews</a></li>
+                                    <li class="underline hover:no-underline hover:text-color-secondary"><a href="#blog">Terms & Conditions</a></li>
+                                    <li class="underline hover:no-underline hover:text-color-secondary"><a href="#contact">Help</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="space-y-6">
+                            <h4 class="text-lg font-bold">Newsletter</h4>
+                            <p class="leading-relaxed">Subscribe With Email And Loads Of News Will Be Sent To You</p>
+                            <div class="flex items-center">
+                                <input type="text" class="w-3/4 p-2 text-color-gray bg-color-white lg:p-3 rounded-l-md focus:outline-none" placeholder="Enter Your Email">
+                                
+                                <button type="submit" class="px-4 py-2 bg-color-secondary lg:px-5 lg:py-3 rounded-r-md hover:opacity-90">
+                                    <i class="fa-solid fa-chevron-right"></i>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="flex justify-center pt-10 border-t border-color-gray">
+                        <p>2023 &copy; LightCode. All Rights Reserved.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+</body>
+
+</html>
